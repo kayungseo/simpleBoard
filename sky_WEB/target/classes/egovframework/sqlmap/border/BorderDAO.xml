@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="sky.border.dao.BorderDAO">
+
+	<resultMap type="java.util.HashMap" id="oracleResultMap"></resultMap>
+
+   
+   <select id="insertBorder" statementType="CALLABLE" resultType="java.util.HashMap" parameterType="java.util.HashMap">
+   { CALL web_main.insertBorder(#{userId},#{userIp},#{title},#{mytextarea})}
+   </select>
+   
+</mapper>
