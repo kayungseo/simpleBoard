@@ -169,7 +169,6 @@ public class MainController {
 	
 	@RequestMapping(value="/exception.do")
 	public String exception(HttpServletRequest request, ModelMap model) throws Exception {
-		System.out.println("이건 테스트");
 		throw new Exception("사용자임의의 에러발생");
 	}
 	
